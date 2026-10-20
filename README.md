@@ -1,262 +1,243 @@
-# Meu Primeiro Portfólio — Programa Trilhas
+# 🌐 Portfólio Web — Lucas Andrade dos Santos
 
-> **Desafio 1 — Trilha de Desenvolvimento Front-end**  
-> Um portfólio pessoal moderno, responsivo e minimalista, desenvolvido exclusivamente com **HTML5, CSS3 e JavaScript puro (Vanilla JS)**, sem frameworks ou dependências externas.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vanilla JS](https://img.shields.io/badge/Vanilla_JS-Zero_Deps-informational?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
+
+> Portfólio pessoal moderno, responsivo e minimalista, projetado para apresentar trajetória, projetos desenvolvidos, competências técnicas e certificados de desenvolvimento web.
 
 ---
 
-## 📋 Sumário
+## Sumário
 
 - [Visão Geral](#-visão-geral)
-- [Identidade Visual e Design](#-identidade-visual-e-design)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Como Executar o Projeto Localmente](#-como-executar-o-projeto-localmente)
-- [Como Personalizar Suas Informações](#-como-personalizar-suas-informações)
-  - [1. Alterar Nome, Cargo, Foto e Redes Sociais](#1-alterar-nome-cargo-foto-e-redes-sociais)
-  - [2. Alterar o Texto da Página "Sobre Mim"](#2-alterar-o-texto-da-página-sobre-mim)
-  - [3. Como Adicionar um Novo Projeto](#3-como-adicionar-um-novo-projeto)
-  - [4. Como Modificar ou Remover um Projeto](#4-como-modificar-ou-remover-um-projeto)
-  - [5. Como Configurar o Acesso aos Certificados](#5-como-configurar-o-acesso-aos-certificados)
-- [Como Publicar no GitHub Pages](#-como-publicar-no-github-pages)
-- [Boas Práticas Implementadas](#-boas-práticas-implementadas)
+- [Demonstração das Páginas](#-demonstração-das-páginas)
+- [Principais Recursos e Destaques](#-principais-recursos-e-destaques)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Arquitetura e Fluxo de Dados](#-arquitetura-e-fluxo-de-dados)
+- [Estrutura de Arquivos](#-estrutura-de-arquivos)
+- [Guia de Configuração e Customização](#-guia-de-configuração-e-customização)
+  - [Perfil e Redes Sociais](#1-perfil-e-redes-sociais)
+  - [Apresentação Pessoal (Sobre Mim)](#2-apresentação-pessoal-sobre-mim)
+  - [Certificados](#3-certificados)
+  - [Projetos](#4-projetos)
+- [Como Executar Localmente](#-como-executar-localmente)
+- [Publicação e Deploy](#-publicação-e-deploy)
+- [Autor](#-autor)
 
 ---
 
-## 🌟 Visão Geral
+## Visão Geral
 
-Este projeto foi construído para ser o seu primeiro portfólio oficial como desenvolvedor Front-end no Programa Trilhas. Ele foi arquitetado com uma prioridade fundamental: **facilidade extrema de personalização**.
+Este projeto consiste em uma aplicação web estática criada para servir como vitrine profissional de projetos e qualificações. Desenvolvido no contexto do **Programa Trilhas** (Trilha de Desenvolvimento Front-end), o projeto foca em excelência nos fundamentos da web: **código limpo**, **semântica**, **acessibilidade** e **performance**.
 
-Todas as informações pessoais, biografia, redes sociais, certificados e projetos estão centralizados em um único arquivo de dados (`js/dados.js`). Isso significa que você pode:
-- Adicionar ou remover projetos apenas editando uma lista simples.
-- Atualizar seu nome, cargo ou foto em um só lugar, refletindo automaticamente em todas as páginas.
-- Manter o código HTML e a lógica JavaScript intactos, evitando erros de sintaxe ou quebra de layout.
+O principal diferencial da aplicação é sua **arquitetura orientada a dados (data-driven)**: toda a informação do portfólio (biografia, dados de contato, redes sociais, links para certificados e lista de projetos) fica desacoplada do HTML e do CSS, centralizada no arquivo de dados `js/dados.js`. Dessa forma, o site pode ser atualizado e mantido com facilidade, sem a necessidade de reescrever estruturas de página ou manipular código de estilização.
 
 ---
 
-## 🎨 Identidade Visual e Design
+## Demonstração das Páginas
 
-O design reproduz fielmente as especificações visuais do Figma do desafio:
+O portfólio é organizado em três visões complementares:
 
-- **Fundo Pastel Difuso:** Fundo suave com manchas orgânicas em tons de lavanda, rosa e azul pastel criadas com `radial-gradient` puro no CSS.
-- **Translucidez (Glassmorphism Suave):** Botões e cartões com fundo translúcido e desfoque suave (`backdrop-filter: blur()`), bordas finas e cantos arredondados.
-- **Tipografia e Espaçamentos:** Tipografia limpa baseada no sistema, alinhamentos centrais equilibrados e foco na legibilidade.
-- **100% Responsivo:** Funciona perfeitamente em celulares (360px+), tablets e monitores desktop.
+1. **Início (`index.html`):** Cartão de boas-vindas com foto de perfil, título profissional, botões de ação rápida e links para redes sociais (GitHub e LinkedIn).
+2. **Sobre Mim (`sobre.html`):** Apresentação detalhada da trajetória, motivações, valores e metas de carreira, com renderização dinâmica de múltiplos parágrafos.
+3. **Projetos (`projetos.html`):** Grade responsiva com cards interativos de projetos em destaque, exibindo imagem, título descritivo, resumo técnico e botão para acesso ao repositório ou demonstração.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Principais Recursos e Destaques
+
+- ** Design Minimalista com Glassmorphism Suave:** Paleta em tons pastel (lavanda, lilás e azul) composta por gradientes radiais nativos em CSS (`radial-gradient`), combinada com botões translúcidos e efeito de desfoque (`backdrop-filter: blur`).
+- ** 100% Responsivo:** Grid e layout fluidos pensados com metodologia Mobile-First, adaptando-se confortavelmente desde smartphones (360px+) até monitores ultrawide.
+- ** Zero Dependências Externas:** Construído puramente com **Vanilla JavaScript**, sem bibliotecas ou frameworks pesados (como React, Vue ou Bootstrap), garantindo carregamento instantâneo e pontuação máxima em desempenho.
+- ** Acessibilidade e Semântica (a11y):** Uso rigoroso de tags semânticas (`<main>`, `<header>`, `<nav>`, `<article>`, `<footer>`), suporte a navegação por teclado (`:focus-visible`), atributos `aria-label` e ícones SVG inline otimizados.
+- ** Tratamento Defensivo:** Fallback automático para imagens com erro de carregamento e estado vazio amigável caso nenhum projeto esteja cadastrado.
+
+---
+
+## Tecnologias Utilizadas
+
+| Tecnologia | Descrição |
+|---|---|
+| **HTML5** | Estruturação semântica, meta tags para SEO e compatibilidade multi-dispositivo. |
+| **CSS3** | Variáveis CSS (Design Tokens), Flexbox, CSS Grid, Glassmorphism, transições suaves e gradientes nativos. |
+| **JavaScript (ES6+)** | Manipulação dinâmica do DOM, renderização desacoplada de dados e controle de eventos. |
+
+---
+
+## Arquitetura e Fluxo de Dados
+
+A aplicação adota um padrão de separação de responsabilidades simples e eficaz:
+
+```mermaid
+flowchart LR
+    A["js/dados.js<br/>(Fonte Única de Dados)"] -->|Fornece portfolioData| B["js/script.js<br/>(Engine de Renderização)"]
+    B -->|Preenche elementos [data-perfil]| C["index.html<br/>(Página Inicial)"]
+    B -->|Injeta parágrafos semânticos| D["sobre.html<br/>(Sobre Mim)"]
+    B -->|Gera cards dinâmicos na grid| E["projetos.html<br/>(Meus Projetos)"]
+```
+
+1. **Camada de Dados (`js/dados.js`):** Expõe o objeto global `portfolioData` contendo as seções `perfil`, `certificados` e `projetos`.
+2. **Camada de Lógica (`js/script.js`):** Aguarda o evento `DOMContentLoaded`, valida a integridade dos dados e distribui as informações para as tags correspondentes usando seletores de atributo (`data-perfil`) ou geração programática de elementos HTML.
+3. **Camada de Apresentação (`*.html` + `css/style.css`):** Estrutura estática limpa e estilização compartilhada baseada em variáveis globais.
+
+---
+
+## Estrutura de Arquivos
 
 ```text
 portifolio-lucas/
-├── index.html              # Página inicial (perfil, botões principais e redes sociais)
-├── sobre.html              # Página "Sobre mim" (apresentação, trajetória e navegação)
-├── projetos.html           # Página "Veja meus projetos" (cards gerados dinamicamente)
+├── index.html              # Página inicial (perfil, menu principal e redes sociais)
+├── sobre.html              # Página com biografia e apresentação profissional
+├── projetos.html           # Página com a galeria de projetos em destaque
 ├── css/
-│   └── style.css           # Estilos unificados, variáveis CSS e responsividade
+│   └── style.css           # Estilos unificados, design tokens e responsividade
 ├── js/
-│   ├── dados.js            # ARQUIVO PRINCIPAL DE PERSONALIZAÇÃO (edite aqui seus dados!)
-│   └── script.js           # Lógica JavaScript nativa (manipulação dinâmica do DOM)
+│   ├── dados.js            # Arquivo de configuração e dados (Single Source of Truth)
+│   └── script.js           # Lógica JavaScript (injeção no DOM e interatividade)
 ├── assets/
-│   └── img/
-│       ├── perfil-gatinho.png  # Foto de perfil de exemplo (gatinho da referência Figma)
-│       ├── perfil.svg          # Avatar vetorial alternativo
-│       ├── projeto-exemplo.svg # Ilustração vetorial para projetos
-│       ├── projeto-1.svg       # Ilustração: Landing Page
-│       ├── projeto-2.svg       # Ilustração: Lógica de Programação
-│       └── projeto-3.svg       # Ilustração: Gerenciador de Tarefas
-├── .gitignore              # Arquivos ignorados pelo Git
-└── README.md               # Este guia completo de instruções
+│   └── img/                # Fotos de perfil, capas dos projetos e ícones SVG
+├── .gitignore              # Arquivos e pastas desconsiderados pelo Git
+└── README.md               # Documentação completa do projeto
 ```
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## Guia de Configuração e Customização
 
-Você não precisa instalar Node.js, compiladores ou bancos de dados. Por ser um site puramente estático, você pode executá-lo de várias formas:
+Toda a personalização do portfólio é feita no arquivo:
 
-### Opção 1: Diretamente no Navegador (Mais Rápido)
-1. Localize a pasta do projeto no seu gerenciador de arquivos.
-2. Dê um duplo clique no arquivo `index.html` (ou clique com botão direito e selecione *Abrir com* seu navegador preferido: Chrome, Firefox, Edge, etc.).
+> **`js/dados.js`**
 
-### Opção 2: Pelo Visual Studio Code com a Extensão Live Server (Recomendado)
-1. Abra a pasta do projeto no VS Code.
-2. Caso ainda não tenha, instale a extensão **Live Server** (de *Ritwick Dey*).
-3. Clique com o botão direito sobre o arquivo `index.html` e selecione **"Open with Live Server"**.
-4. O navegador abrirá automaticamente em `http://127.0.0.1:5500`.
+Não é necessário alterar nenhuma linha dos arquivos HTML ou CSS para atualizar as informações do site.
 
-### Opção 3: Usando Python no Terminal
-Se você tiver o Python instalado:
-```bash
-# Abra o terminal na pasta do projeto e execute:
-python3 -m http.server 8000
-```
-Depois abra seu navegador em: `http://localhost:8000`.
+### 1. Perfil e Redes Sociais
 
----
-
-## ✏️ Como Personalizar Suas Informações
-
-> **Regra de Ouro:** Todas as suas alterações são feitas exclusivamente no arquivo:  
-> 📄 `js/dados.js`
-
-Abra o arquivo `js/dados.js` no seu editor de código (como o VS Code). Você verá a estrutura `portfolioData`.
-
----
-
-### 1. Alterar Nome, Cargo, Foto e Redes Sociais
-
-No início do arquivo `js/dados.js`, edite o objeto `perfil`:
+No início do objeto `portfolioData`, edite a chave `perfil`:
 
 ```javascript
 perfil: {
-  // Substitua pelo seu nome real
-  nome: "Lucas Silva",
-
-  // Substitua pelo seu cargo ou curso atual
+  nome: "Lucas Andrade dos Santos",
   cargo: "Desenvolvedor Front-end no Programa Trilhas",
-
-  // Caminho da sua foto:
-  // Coloque seu arquivo (ex: foto.jpg) dentro de assets/img/ e aponte aqui:
-  foto: "assets/img/minha-foto.jpg",
-
-  // Link do seu GitHub
-  github: "https://github.com/seu-usuario",
-
-  // Link do seu LinkedIn
-  linkedin: "https://linkedin.com/in/seu-usuario"
+  foto: "assets/img/foto-perfil.jpg", // Caminho local ou URL externa da imagem
+  github: "https://github.com/lucasA51",
+  linkedin: "https://www.linkedin.com/in/135lucassantos"
 }
 ```
 
-> **Dica sobre a foto:** Recomendamos utilizar uma foto quadrada (ex: 500x500 pixels). O CSS cuidará de torná-la circular automaticamente. Caso a foto não carregue ou você informe um caminho incorreto, o portfólio possui um mecanismo de proteção que exibe automaticamente uma imagem reserva.
+- **Foto de perfil:** Recomenda-se imagem quadrada (ex: 500x500px). O CSS aplica corte circular automático.
+- **Redes Sociais:** Se algum dos links estiver vazio (`""`), o botão correspondente será ocultado automaticamente.
 
----
+### 2. Apresentação Pessoal ("Sobre Mim")
 
-### 2. Alterar o Texto da Página "Sobre Mim"
-
-Ainda dentro de `perfil`, edite a propriedade `sobre`:
+Defina o texto biográfico na propriedade `sobre`:
 
 ```javascript
-sobre: `Olá! Sou o Lucas, estudante de desenvolvimento Front-end.
+sobre: `Olá! Sou apaixonado por tecnologia e por transformar ideias em experiências digitais...
 
-Iniciei minha trajetória na tecnologia motivado pelo desejo de criar experiências interativas na internet. Tenho grande interesse em interfaces web acessíveis, animações suaves e design limpo.
-
-Atualmente domino conceitos fundamentais de HTML5, CSS3, lógica com JavaScript e controle de versão com Git/GitHub. Meu objetivo profissional é ingressar em uma equipe de desenvolvimento e contribuir ativamente na construção de produtos reais.`
+Como estudante de Front-end pelo Programa Trilhas, busco construir uma base técnica sólida...`
 ```
 
-> **Dica:** Você pode separar seus parágrafos com uma linha em branco. O script converterá cada bloco de texto em parágrafos separados na página.
+> **Dica:** Parágrafos separados por linhas em branco no texto serão renderizados automaticamente como tags `<p>` individuais na página `sobre.html`.
 
----
+### 3. Certificados
 
-### 3. Como Adicionar um Novo Projeto
+Configure o link para o diretório de certificados (ex.: pasta pública no Google Drive):
 
-Para adicionar um projeto à página "Veja meus projetos", basta adicionar um novo objeto ao array `projetos` em `js/dados.js`.
+```javascript
+certificados: {
+  urlPasta: "https://drive.google.com/drive/folders/SEU_LINK_AQUI"
+}
+```
 
-#### Exemplo Concreto:
+O botão **"Acesse os meus certificados"** na página inicial direcionará o usuário para esta URL em uma nova aba.
 
-Suponha que você acabou de criar um projeto de **Calculadora de IMC** e quer colocá-lo no seu portfólio:
+### 4. Projetos
 
-1. Salve uma captura de tela do seu projeto dentro da pasta `assets/img/` (exemplo: `assets/img/calculadora-imc.png`).
-2. Abra `js/dados.js` e adicione o bloco abaixo dentro do array `projetos`:
+A seção de projetos é gerenciada através de uma lista de objetos:
 
 ```javascript
 projetos: [
-  // ... seus outros projetos ...
-
-  // Novo projeto adicionado:
   {
-    titulo: "Calculadora de IMC",
-    descricao: "Aplicação interativa desenvolvida com JavaScript para cálculo do Índice de Massa Corporal com validação de dados.",
-    imagem: "assets/img/calculadora-imc.png",
-    url: "https://github.com/seu-usuario/calculadora-imc"
+    titulo: "Filtro Digital",
+    descricao: "Implementa filtro passa alta e baixa em python e demonstra propriedades graficamente.",
+    imagem: "assets/img/projeto-1.jpg",
+    url: "https://github.com/lucasA51/ProjetoFiltroDigital"
+  },
+  {
+    titulo: "Sensor MQTT",
+    descricao: "Simulação de sensor de distância enviando dados via MQTT para dashboard e SQLite.",
+    imagem: "assets/img/projeto-2.png",
+    url: "https://github.com/lucasA51/sensor-mqtt"
   }
 ]
 ```
 
-3. Salve o arquivo. Pronto! O novo card aparecerá automaticamente na página `projetos.html`, mantendo a harmonia visual, o alinhamento da grade e o botão de acesso.
+- **Adicionar:** Duplique um bloco de objeto dentro do array `projetos`.
+- **Remover:** Exclua o bloco do projeto indesejado.
+- **Link em breve:** Se deixar `url: ""`, o card exibirá o botão desabilitado com o rótulo *"Link em breve"*.
 
 ---
 
-### 4. Como Modificar ou Remover um Projeto
+## Como Executar Localmente
 
-- **Para Modificar:** Altere o `titulo`, `descricao`, `imagem` ou `url` do projeto desejado no array `projetos`.
-- **Para Remover:** Basta apagar o bloco correspondente (do `{` até o `},`) do array `projetos`.
+Por se tratar de um site estático puro, não há etapas de compilação ou instalação de pacotes gerenciados via npm/yarn.
 
-Se você apagar todos os projetos temporariamente, a página exibirá automaticamente uma mensagem amigável informando que os projetos estão sendo preparados.
+### Pré-requisitos
+- Um navegador web moderno (Google Chrome, Firefox, Edge, Safari, Opera).
 
----
+### Passo a Passo
 
-### 5. Como Configurar o Acesso aos Certificados
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/lucasA51/PortifolioLucas.git
+   cd PortifolioLucas
+   ```
 
-O botão **"Acesse os meus certificados"** direciona o visitante para a sua pasta pública de certificados (por exemplo, no Google Drive).
+2. **Execute a aplicação por uma das opções:**
 
-Para configurá-lo:
-1. Acesse o seu Google Drive e crie uma pasta (ex: "Certificados - Programa Trilhas").
-2. Envie seus certificados em PDF para dentro dessa pasta.
-3. Clique com o botão direito na pasta > **Compartilhar** > em *Acesso Geral*, mude de *Restrito* para **"Qualquer pessoa com o link"**.
-4. Copie o link gerado.
-5. Em `js/dados.js`, cole o link na propriedade `urlPasta`:
+   - **Opção 1 — Abertura Direta:**  
+     Dê um duplo clique no arquivo `index.html` ou abra-o diretamente no seu navegador.
 
-```javascript
-certificados: {
-  urlPasta: "https://drive.google.com/drive/folders/1a2b3c4d5e6f7g8h9?usp=sharing"
-}
-```
+   - **Opção 2 — Extensão Live Server (VS Code):**  
+     Abra a pasta do projeto no VS Code, clique com o botão direito no `index.html` e escolha **"Open with Live Server"**.
 
-6. Se o link for deixado em branco, ao clicar no botão o usuário receberá uma mensagem amigável instruindo sobre a configuração.
-
----
-
-## 🌐 Como Publicar no GitHub Pages
-
-O portfólio foi arquitetado com caminhos relativos para funcionar imediatamente no **GitHub Pages**. Siga este passo a passo:
-
-### Passo 1: Inicialize o repositório Git localmente (caso ainda não tenha feito)
-Abra o terminal na pasta do projeto:
-```bash
-git init
-git add .
-git commit -m "feat: Implementação do Desafio 1 — Meu Primeiro Portfólio"
-```
-
-### Passo 2: Crie um repositório público no GitHub
-1. Acesse [github.com/new](https://github.com/new).
-2. Dê um nome ao repositório (exemplo: `portifolio-trilhas`).
-3. Mantenha o repositório como **Público**.
-4. Não adicione README nem .gitignore (eles já existem no seu projeto).
-5. Clique em **Create repository**.
-
-### Passo 3: Envie seu código para o GitHub
-Execute os comandos sugeridos pelo GitHub no seu terminal:
-```bash
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/portifolio-trilhas.git
-git push -u origin main
-```
-
-### Passo 4: Ative o GitHub Pages
-1. No seu repositório no GitHub, clique na aba **Settings** (Configurações).
-2. No menu lateral esquerdo, clique em **Pages**.
-3. Na seção **Build and deployment**:
-   - Em **Source**, selecione `Deploy from a branch`.
-   - Em **Branch**, selecione `main` e a pasta `/(root)`.
-4. Clique no botão **Save**.
-5. Aguarde cerca de 1 a 2 minutos e recarregue a página.
-6. Um aviso com a URL pública do seu portfólio será exibido no topo:
-   `https://SEU-USUARIO.github.io/portifolio-trilhas/`
-
-Pronto! Seu portfólio estará online para qualquer pessoa acessar e pronto para ser enviado na plataforma do Programa Trilhas.
+   - **Opção 3 — Servidor Local com Python:**  
+     No terminal, dentro da pasta do projeto, execute:
+     ```bash
+     # Python 3
+     python3 -m http.server 8000
+     ```
+     Em seguida, acesse no navegador: `http://localhost:8000`
 
 ---
 
-## 🛡️ Boas Práticas Implementadas
+## Publicação e Deploy
 
-- **HTML5 Semântico:** Uso correto de tags semânticas (`<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<footer>`) facilitando indexação e acessibilidade.
-- **Acessibilidade (a11y):** Imagens com atributos `alt` descritivos, ícones com `aria-hidden="true"` e links sociais com `aria-label` claros para leitores de tela.
-- **Foco e Interatividade:** Elementos interativos com transições suaves e anéis de foco (`:focus-visible`) adequados para navegação via teclado.
-- **Segurança:** Todos os links externos abrem em nova aba com `target="_blank"` acompanhado de `rel="noopener noreferrer"`.
-- **CSS Modular com Variáveis:** Utilização de CSS Custom Properties (`:root`) para controle ágil de cores, bordas e espaçamentos.
-- **Vanilla JavaScript Seguro:** Código desacoplado, sem dependências externas pesadas, com tratamento defensivo para campos vazios e fallback de imagens.
+Como a estrutura utiliza referências e caminhos relativos para todos os assets e scripts, o projeto está pronto para deploy instantâneo em qualquer plataforma de hospedagem de páginas estáticas:
+
+- **GitHub Pages:**
+  1. Vá em **Settings** > **Pages** no repositório.
+  2. Em **Source**, selecione `Deploy from a branch`.
+  3. Escolha o branch `master` (ou `main`) e o diretório `/ (root)`.
+  4. Salve e acesse pela URL pública gerada.
+- **Vercel / Netlify:**
+  - Basta conectar o repositório; o deploy ocorre sem necessidade de comando de build.
 
 ---
 
-Desenvolvido com carinho durante o **Programa Trilhas**. Bons estudos e rumo à carreira Front-end! 🚀
+## Autor
+
+**Lucas Andrade dos Santos**  
+*Desenvolvedor Front-end em formação no Programa Trilhas*
+
+- **GitHub:** [@lucasA51](https://github.com/lucasA51)
+- **LinkedIn:** [Lucas Santos](https://www.linkedin.com/in/135lucassantos)
+
+---
+
+<div align="center">
+  <sub>Desenvolvido com dedicação durante a Trilha de Desenvolvimento Front-end do Programa Trilhas.</sub>
+</div>
