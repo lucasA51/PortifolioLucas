@@ -79,15 +79,15 @@ Meu objetivo é construir uma base sólida em programação, colaborar em projet
     },
     {
       titulo: "O Arauto do Rei",
-      descricao: "Página moderna construída com foco em layout responsivo com CSS Flexbox, Grid e acessibilidade web.",
+      descricao: "O Arauto do Rei é um site temático inspirado no universo de Game of Thrones, que transporta os visitantes ao mundo de Westeros por meio de uma experiência digital imersiva.",
       imagem: "assets/img/projeto-1.svg",
       url: "https://github.com/lucasA51/o-arauto-do-rei"
     },
     {
-      titulo: "Gerenciador de Tarefas",
-      descricao: "Aplicação interativa de lista de tarefas (To-Do List) com armazenamento de dados no navegador.",
+      titulo: "Plataforma de Eventos",
+      descricao: "Aplicação web para organização de eventos.",
       imagem: "assets/img/projeto-3.svg",
-      url: "https://github.com"
+      url: "https://github.com/lucasA51/PlataformaDeEventos"
     }
   ]
 };
