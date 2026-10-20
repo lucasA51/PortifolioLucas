@@ -32,11 +32,14 @@ const portfolioData = {
 
     // Texto de apresentação pessoal para a página "Sobre mim".
     // Você pode escrever parágrafos separados por quebra de linha.
-    sobre: `Olá! Sou estudante de desenvolvimento Front-end pelo Programa Trilhas.
+    sobre: `Olá! Sou apaixonado por tecnologia e por transformar ideias em experiências digitais. Para mim, o desenvolvimento web é a ferramenta ideal para construir soluções que facilitem o dia a dia e entreguem valor real aos usuários.
 
-Tenho grande interesse em tecnologia, criação de interfaces modernas e resolução de problemas através do código. Atualmente, estou aprofundando meus conhecimentos em HTML5, CSS3, JavaScript e boas práticas de desenvolvimento web.
+Como estudante de Front-end pelo Programa Trilhas, busco construir uma base técnica sólida. Dedico-me ao domínio de HTML5, CSS3 e JavaScript, sempre unindo a teoria com boas práticas de programação e código limpo.
 
-Meu objetivo é construir uma base sólida em programação, colaborar em projetos desafiadores e me tornar um desenvolvedor capaz de criar soluções acessíveis, responsivas e de alto impacto visual.`,
+Acredito que a internet deve ser um espaço inclusivo. Meu objetivo é desenvolver interfaces modernas, estritamente acessíveis e totalmente responsivas em qualquer tamanho de tela, combinando uma ótima usabilidade com excelência visual.
+
+Sou movido pela curiosidade e pelo trabalho em equipe. Busco colaborar em projetos inovadores que impulsionem minha evolução técnica, sempre pronto para agregar valor e entregar aplicações web de alto impacto e qualidade.
+`,
 
     // Link para o seu perfil no GitHub (ex: "https://github.com/seu-usuario")
     github: "https://github.com/lucasA51",
@@ -68,25 +71,25 @@ Meu objetivo é construir uma base sólida em programação, colaborar em projet
     {
       titulo: "Filtro Digital",
       descricao: "Implementa filtro passa alta e baixa em python e demonstra algumas propriedade do sinal e filtro graficamente.",
-      imagem: "assets/img/projeto-exemplo.svg",
+      imagem: "assets/img/projeto-1.jpg",
       url: "https://github.com/lucasA51/ProjetoFiltroDigital"
     },
     {
       titulo: "Sensor MQTT",
       descricao: "Arquivos necessários para apresentação da simulação de um sensor de distância que envia seus dados via mqtt para uma dashboard e base de dados sqlite",
-      imagem: "assets/img/projeto-2.svg",
+      imagem: "assets/img/projeto-2.png",
       url: "https://github.com/lucasA51/sensor-mqtt"
     },
     {
       titulo: "O Arauto do Rei",
       descricao: "O Arauto do Rei é um site temático inspirado no universo de Game of Thrones, que transporta os visitantes ao mundo de Westeros por meio de uma experiência digital imersiva.",
-      imagem: "assets/img/projeto-1.svg",
+      imagem: "assets/img/projeto-3.png",
       url: "https://github.com/lucasA51/o-arauto-do-rei"
     },
     {
       titulo: "Plataforma de Eventos",
       descricao: "Aplicação web para organização de eventos.",
-      imagem: "assets/img/projeto-3.svg",
+      imagem: "assets/img/projeto-4.png",
       url: "https://github.com/lucasA51/PlataformaDeEventos"
     }
   ]
