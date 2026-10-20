@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="50%" stop-color="#fbcfe8"/>
+      <stop offset="100%" stop-color="#ddd6fe"/>
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="80" cy="80" r="79" fill="url(#bgGrad)" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Body / Shoulders -->
+  <path d="M30 150 C35 118 60 110 80 110 C100 110 125 118 130 150 Z" fill="#6366f1"/>
+  <path d="M55 110 L80 130 L105 110" fill="none" stroke="#4f46e5" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Head -->
+  <ellipse cx="80" cy="72" rx="34" ry="38" fill="url(#avatarGrad)"/>
+
+  <!-- Hair -->
+  <path d="M46 70 C44 42 62 32 80 32 C98 32 116 42 114 70 C106 52 98 46 80 48 C62 46 54 52 46 70 Z" fill="#475569"/>
+
+  <!-- Glasses -->
+  <circle cx="68" cy="72" r="11" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <circle cx="92" cy="72" r="11" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <line x1="79" y1="72" x2="81" y2="72" stroke="#1e293b" stroke-width="2.5"/>
+  <line x1="57" y1="72" x2="48" y2="68" stroke="#1e293b" stroke-width="2"/>
+  <line x1="103" y1="72" x2="112" y2="68" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Eyes -->
+  <circle cx="68" cy="72" r="3.5" fill="#1e293b"/>
+  <circle cx="92" cy="72" r="3.5" fill="#1e293b"/>
+  <circle cx="69.5" cy="70.5" r="1" fill="#ffffff"/>
+  <circle cx="93.5" cy="70.5" r="1" fill="#ffffff"/>
+
+  <!-- Smile -->
+  <path d="M74 88 Q80 93 86 88" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

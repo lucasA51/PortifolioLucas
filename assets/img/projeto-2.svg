@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="50%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <filter id="p2Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="600" height="340" fill="url(#p2Grad)"/>
+  <g filter="url(#p2Shadow)">
+    <rect x="70" y="50" width="460" height="240" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="70" y="50" width="460" height="36" rx="12" fill="#f8fafc"/>
+    <path d="M70 76 L530 76" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="92" cy="68" r="4.5" fill="#f87171"/>
+    <circle cx="106" cy="68" r="4.5" fill="#fbbf24"/>
+    <circle cx="120" cy="68" r="4.5" fill="#34d399"/>
+    <rect x="145" y="60" width="180" height="16" rx="4" fill="#e2e8f0"/>
+
+    <!-- Calculator / Logic UI mockup -->
+    <rect x="110" y="100" width="160" height="160" rx="10" fill="#0f172a"/>
+    <rect x="122" y="112" width="136" height="32" rx="6" fill="#1e293b"/>
+    <rect x="210" y="122" width="40" height="12" rx="3" fill="#38bdf8"/>
+    <!-- Keys -->
+    <rect x="122" y="152" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="158" y="152" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="194" y="152" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="230" y="152" width="28" height="22" rx="4" fill="#0ea5e9"/>
+
+    <rect x="122" y="180" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="158" y="180" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="194" y="180" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="230" y="180" width="28" height="22" rx="4" fill="#0ea5e9"/>
+
+    <rect x="122" y="208" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="158" y="208" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="194" y="208" width="28" height="22" rx="4" fill="#334155"/>
+    <rect x="230" y="208" width="28" height="22" rx="4" fill="#0ea5e9"/>
+
+    <rect x="122" y="236" width="64" height="18" rx="4" fill="#334155"/>
+    <rect x="194" y="236" width="28" height="18" rx="4" fill="#334155"/>
+    <rect x="230" y="236" width="28" height="18" rx="4" fill="#10b981"/>
+
+    <!-- Right side: info -->
+    <rect x="300" y="110" width="180" height="18" rx="4" fill="#0284c7"/>
+    <rect x="300" y="136" width="200" height="10" rx="3" fill="#64748b"/>
+    <rect x="300" y="154" width="180" height="10" rx="3" fill="#94a3b8"/>
+    <rect x="300" y="172" width="150" height="10" rx="3" fill="#cbd5e1"/>
+    
+    <rect x="300" y="210" width="90" height="26" rx="6" fill="#0ea5e9"/>
+  </g>
+</svg>

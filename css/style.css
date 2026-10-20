@@ -1,0 +1,492 @@
+/**
+ * ====================================================================
+ * ESTILOS GLOBAIS DO PORTFÓLIO
+ * ====================================================================
+ * 
+ * Desenvolvido para o Desafio 1 — Meu Primeiro Portfólio (Programa Trilhas)
+ * Identidade visual: Fundo suave em gradiente difuso pastel (lavanda, rosa e azul),
+ * cartões e botões translúcidos com borda fina e design minimalista.
+ */
+
+/* --------------------------------------------------------------------
+   1. VARIÁVEIS CSS (DESIGN TOKENS)
+-------------------------------------------------------------------- */
+:root {
+  /* Cores principais */
+  --bg-color: #ffffff;
+  --text-primary: #18181b;
+  --text-secondary: #3f3f46;
+  --text-muted: #71717a;
+
+  /* Botões e Superfícies translúcidas (efeito glassmorphism suave) */
+  --btn-bg: rgba(255, 255, 255, 0.45);
+  --btn-bg-hover: rgba(255, 255, 255, 0.75);
+  --btn-border: #27272a;
+  --btn-border-hover: #09090b;
+
+  --card-bg: rgba(255, 255, 255, 0.55);
+  --card-border: rgba(39, 39, 42, 0.2);
+  --card-border-hover: rgba(39, 39, 42, 0.4);
+
+  /* Dimensões e Espaçamentos */
+  --btn-max-width: 454px;
+  --btn-height: 48px;
+  --radius-btn: 8px;
+  --radius-card: 12px;
+  --radius-circle: 50%;
+
+  /* Tipografia */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --transition-default: all 0.2s ease-in-out;
+}
+
+/* --------------------------------------------------------------------
+   2. RESET E CONFIGURAÇÕES GLOBAIS
+-------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+
+  /*
+   * Fundo pastel difuso reproduzindo fielmente o Figma:
+   * - Topo direito: lavanda / roxo pastel
+   * - Base esquerda: rosa / lilás pastel
+   * - Centro-esquerda: azul pastel / ciano suave
+   * - Centro-direita: lavanda suave
+   */
+  background-image:
+    radial-gradient(circle at 100% 12%, rgba(192, 170, 230, 0.75) 0%, rgba(207, 163, 227, 0.35) 35%, transparent 65%),
+    radial-gradient(circle at 0% 88%, rgba(228, 178, 229, 0.75) 0%, rgba(212, 175, 228, 0.35) 35%, transparent 65%),
+    radial-gradient(circle at 0% 38%, rgba(217, 224, 246, 0.75) 0%, rgba(226, 237, 249, 0.4) 30%, transparent 60%),
+    radial-gradient(circle at 95% 45%, rgba(213, 179, 231, 0.4) 0%, transparent 45%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------
+   3. ESTRUTURA PRINCIPAL (CONTAINER)
+-------------------------------------------------------------------- */
+.pagina-container {
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 48px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------------------
+   4. CABEÇALHO DO PERFIL (COMPARTILHADO EM TODAS AS PÁGINAS)
+-------------------------------------------------------------------- */
+.perfil-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.perfil-foto-container {
+  width: 94px;
+  height: 94px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.perfil-foto {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-circle);
+  object-fit: cover;
+  display: block;
+  border: 1px solid #71717a;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.perfil-nome {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.perfil-cargo {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------
+   5. BOTÕES DE NAVEGAÇÃO PRINCIPAIS (INDEX E PÁGINAS)
+-------------------------------------------------------------------- */
+.menu-botoes {
+  width: 100%;
+  max-width: var(--btn-max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.btn-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--btn-height);
+  padding: 0 16px;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-btn);
+  background-color: var(--btn-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-default);
+  user-select: none;
+}
+
+.btn-principal:hover {
+  background-color: var(--btn-bg-hover);
+  border-color: var(--btn-border-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.btn-principal:active {
+  transform: translateY(0);
+}
+
+.btn-principal:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Variação secundária (ex: botões de navegação voltar) */
+.btn-secundario {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(39, 39, 42, 0.4);
+}
+
+.btn-secundario:hover {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+/* --------------------------------------------------------------------
+   6. ÍCONES DE REDES SOCIAIS
+-------------------------------------------------------------------- */
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.rede-icone-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--transition-default);
+  border-radius: 4px;
+}
+
+.rede-icone-link svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.rede-icone-link:hover {
+  color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.rede-icone-link:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------
+   7. RODAPÉ
+-------------------------------------------------------------------- */
+.rodape {
+  margin-top: 36px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.rodape-coracao {
+  color: inherit;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+/* --------------------------------------------------------------------
+   8. PÁGINA "SOBRE MIM"
+-------------------------------------------------------------------- */
+.secao-sobre {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-sobre {
+  width: 100%;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  margin-bottom: 24px;
+}
+
+.card-sobre h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 10px;
+}
+
+.sobre-texto {
+  font-size: 0.975rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sobre-texto p {
+  text-align: justify;
+}
+
+.navegacao-pagina {
+  width: 100%;
+  max-width: var(--btn-max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* --------------------------------------------------------------------
+   9. PÁGINA "VEJA MEUS PROJETOS"
+-------------------------------------------------------------------- */
+.secao-projetos {
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.secao-projetos-titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.projetos-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.card-projeto {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-default);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.card-projeto:hover {
+  transform: translateY(-3px);
+  border-color: var(--card-border-hover);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card-imagem-wrapper {
+  width: 100%;
+  height: 160px;
+  background-color: #f4f4f5;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.card-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-projeto:hover .card-imagem {
+  transform: scale(1.02);
+}
+
+.card-conteudo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-titulo {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.card-descricao {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.btn-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-btn);
+  background-color: var(--btn-bg);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-default);
+  cursor: pointer;
+}
+
+.btn-card:hover {
+  background-color: var(--btn-bg-hover);
+  border-color: var(--btn-border-hover);
+}
+
+.btn-card:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.btn-card.desabilitado {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+.projetos-vazio {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--card-bg);
+  border: 1px dashed var(--card-border);
+  border-radius: var(--radius-card);
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------
+   10. RESPONSIVIDADE (MEDIA QUERIES)
+-------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .pagina-container {
+    padding: 36px 16px 24px;
+    justify-content: flex-start;
+  }
+
+  .perfil-foto-container {
+    width: 88px;
+    height: 88px;
+  }
+
+  .perfil-nome {
+    font-size: 1.1rem;
+  }
+
+  .perfil-cargo {
+    font-size: 0.9rem;
+  }
+
+  .menu-botoes,
+  .navegacao-pagina {
+    max-width: 100%;
+  }
+
+  .btn-principal {
+    height: 48px;
+    font-size: 0.925rem;
+  }
+
+  .card-sobre {
+    padding: 22px 18px;
+  }
+
+  .card-sobre h2 {
+    font-size: 1.15rem;
+  }
+
+  .sobre-texto {
+    font-size: 0.925rem;
+  }
+
+  .projetos-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
