@@ -73,10 +73,10 @@ A aplicação adota um padrão de separação de responsabilidades simples e efi
 
 ```mermaid
 flowchart LR
-    A["js/dados.js<br/>(Fonte Única de Dados)"] -->|Fornece portfolioData| B["js/script.js<br/>(Engine de Renderização)"]
-    B -->|Preenche elementos [data-perfil]| C["index.html<br/>(Página Inicial)"]
-    B -->|Injeta parágrafos semânticos| D["sobre.html<br/>(Sobre Mim)"]
-    B -->|Gera cards dinâmicos na grid| E["projetos.html<br/>(Meus Projetos)"]
+    A["js/dados.js<br/>(Fonte Única de Dados)"] -->|"Fornece portfolioData"| B["js/script.js<br/>(Engine de Renderização)"]
+    B -->|"Preenche elementos [data-perfil]"| C["index.html<br/>(Página Inicial)"]
+    B -->|"Injeta parágrafos semânticos"| D["sobre.html<br/>(Sobre Mim)"]
+    B -->|"Gera cards dinâmicos na grid"| E["projetos.html<br/>(Meus Projetos)"]
 ```
 
 1. **Camada de Dados (`js/dados.js`):** Expõe o objeto global `portfolioData` contendo as seções `perfil`, `certificados` e `projetos`.
